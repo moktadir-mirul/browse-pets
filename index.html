@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse Pets</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5e9ebfc54c.js" crossorigin="anonymous"></script>
+
+    <!-- Daisy UI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .adlam {
+            font-family: "ADLaM Display", serif;
+        }
+        .sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+
 </head>
 <body>
     <header>
+        <!-- Nav for small device -->
+        <nav class="w-11/12 mx-auto h-20 bg-[#fff9f4] flex justify-between items-center lg:hidden">
+            <div>
+                <img src="images/logo-sm.png" alt="Paw Print Logo">
+            </div>
+            <div>
+                <a href="#"><img src="images/ham-menu.png" alt="Hamburger Menu Icon"></a>
+            </div>
+        </nav>
 
+        <!-- Nav for Large Devices -->
+        <nav class="w-4/5 mx-auto bg-[#fff9f4] h-20 hidden lg:flex justify-between items-center">
+            <div class="flex gap-3 items-center sora font-normal text-2xl">
+                <img src="images/logo-header.png" alt="Browse Pet Logo">
+                <h1>Browse Pets</h1>
+            </div>
+            <div class="flex justify-between list-none gap-5 sora text-[#111111] text-xl">
+                <li><a href="#">Find A Pet</a></li>
+                <li><a href="#">Breeds</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+            <div class="flex justify-between items-center gap-3">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button>Log In</button>
+                <button>Register</button>
+            </div>
+        </nav>
     </header>
     <main>
 
