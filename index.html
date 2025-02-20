@@ -39,21 +39,23 @@
         </nav>
 
         <!-- Nav for Large Devices -->
-        <nav class="w-4/5 mx-auto bg-[#fff9f4] h-20 hidden lg:flex justify-between items-center">
-            <div class="flex gap-3 items-center sora font-normal text-2xl">
-                <img src="images/logo-header.png" alt="Browse Pet Logo">
-                <h1>Browse Pets</h1>
-            </div>
-            <div class="flex justify-between list-none gap-5 sora text-[#111111] text-xl">
-                <li><a href="#">Find A Pet</a></li>
-                <li><a href="#">Breeds</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </div>
-            <div class="flex justify-between items-center gap-3">
-                <i class="fa-regular fa-bell"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button>Log In</button>
-                <button>Register</button>
+        <nav class="bg-[#fff9f4] w-full">
+            <div class="w-4/5 mx-auto bg-[#fff9f4] h-20 hidden lg:flex justify-between items-center">
+                <div class="flex gap-3 items-center sora font-normal text-xl xl:text-2xl">
+                    <img src="images/logo-header.png" alt="Browse Pet Logo">
+                    <h1>Browse Pets</h1>
+                </div>
+                <div class="flex justify-between list-none gap-6 sora text-[#111111] text-base xl:text-lg">
+                    <li class="hover:scale-110 duration-300"><a href="#">Find A Pet</a></li>
+                    <li class="hover:scale-110 duration-300"><a href="#">Breeds</a></li>
+                    <li class="hover:scale-110 duration-300"><a href="#">Contact Us</a></li>
+                </div>
+                <div class="flex justify-between items-center gap-4 sora font-normal">
+                    <i class="fa-regular fa-bell fa-xl hover:scale-110 duration-300"></i>
+                    <i class="fa-solid fa-magnifying-glass fa-xl hover:scale-110 duration-300"></i>
+                    <button class="px-8 py-2 border-2 border-[#FFDC26] rounded-lg hover:bg-[#FFDC26] duration-500">Log In</button>
+                    <button class="px-8 py-2 border-none bg-[#FFDC26] rounded-lg hover:bg-red-600 hover:text-white duration-500">Register</button>
+                </div>
             </div>
         </nav>
     </header>
